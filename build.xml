@@ -1,16 +1,19 @@
-<project name="SimpleJavaApp" default="compile">
-    <property name="src" location="src"/>
-    <property name="build" location="build"/>
+<project name="banking" default="savings">
     
-    <target name="init">
-        <mkdir dir="${build}"/>
+<echo message = "Welcome to Banking Services" />   
+    
+    <target name="savings">
+        <echo message = "Welcome to Savings Section" />   
     </target>
     
-    <target name="compile" depends="init">
-        <javac srcdir="${src}" destdir="${build}"/>
+    <target name="loans">
+        <echo message = "Welcome to Loans Sections" />   
     </target>
     
-    <target name="run" depends="compile">
-        <java classname="Main" classpath="${build}"/>
+    <target name="cresditcard">
+        <echo message = "Welcome to Credit Card Section" />   
     </target>
+
+<echo message = "End" />    
+
 </project>
